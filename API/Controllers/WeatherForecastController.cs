@@ -21,7 +21,7 @@ private readonly DataContext _context;
 public WeatherForecastController(ILogger<WeatherForecastController> logger, DataContext context)
 {
     _logger = logger;
-    _context = _context;
+    _context = context;
 }
 
 [HttpGet(Name = "GetWeatherForecast")]
