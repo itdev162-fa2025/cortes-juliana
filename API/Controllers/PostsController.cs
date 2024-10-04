@@ -9,7 +9,16 @@ namespace API.Controllers
     public class PostsController: ControllerBase
     { 
         private readonly DataContext _context;
-        public PostsController(DataContext context);
+        public PostsController(DataContext context)
+        {
+            this._context = context;
+        }
         
+        //Get api/posts
+        [HttpGet(Name = "GetPosts")]
+        public ActionResult<List<Post>> Get ()
+        {
+            return this._context.Posts.ToList();
+        }
     }
 }
