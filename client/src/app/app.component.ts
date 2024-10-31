@@ -4,7 +4,9 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+
 
 
 @Component({
@@ -15,7 +17,9 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     MatCardModule,
     MatToolbarModule,
-  MatButtonModule],
+    MatButtonModule,
+    MatIconModule
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
