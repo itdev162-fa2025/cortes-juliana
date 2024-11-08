@@ -24,7 +24,7 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'client';
+  title = 'BlogBox';
   posts: any;
 
   constructor (private http: HttpClient) {
